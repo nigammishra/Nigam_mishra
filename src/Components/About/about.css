@@ -35,10 +35,20 @@
 .about__title {
     font-size: var(--small-font-size);
     font-weight: var(--font-medium);
+    /* color: #000; */
 }
+
+body.dark-mode .about__title {
+    color: #000;
+   }
+body.dark-mode .about__subtitle {
+    color: #000;
+   }
+   
 
 .about__subtitle {
     font-size: 0.760rem;
+    /* color: #000; */
 }
 
 .about__description {

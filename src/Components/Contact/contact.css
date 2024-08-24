@@ -99,6 +99,27 @@
     z-index: 10;
 }
 
+/* contact.css */
+
+/* Default styles for light mode */
+.contact__form-tags {
+    background-color: white; /* Default light mode background */
+    color: black; /* Default text color */
+    padding: 5px;
+    border-radius: 4px;
+}
+
+/* Styles for dark mode */
+body.dark-mode .contact__form-tags {
+    background-color: #000; /* Dark mode background color */
+    color: white; /* Text color for dark mode */
+    
+}
+body.dark-mode .contact__form-input {
+    border: 2px solid rgba(181, 179, 179, 0.3);
+}
+
+
 .contact__form-area {
     height: 11rem;
 }

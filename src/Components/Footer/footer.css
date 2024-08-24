@@ -60,7 +60,7 @@
 .footer {
     padding: 2rem;
     /* background-color: #f8f9fa; Light mode background color */
-    color: #333; /* Light mode text color */
+    color: #000; /* Light mode text color */
     transition: all 0.3s ease;
   }
   
@@ -71,8 +71,15 @@
   
   .footer__title {
     font-size: 2rem;
+    color: #000;
   }
   
+
+  body.dark-mode  .footer__title  {
+    color: #fff;
+   }
+
+   
   .footer__list {
     list-style: none;
     padding: 0;
@@ -99,5 +106,10 @@
     margin-top: 1rem;
     font-size: 0.875rem;
     text-align: center;
+    color: #000;
   }
   
+  body.dark-mode .footer__copy{
+    color: #fff;
+   }
+   

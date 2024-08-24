@@ -90,7 +90,7 @@ body {
 h1,
 h2,
 h3 {
-  color: var(--title-color);
+  /* color: var(--title-color); */
   font-weight: var(--font-semi-bold);
 }
 
@@ -120,7 +120,12 @@ img {
 
 .section__title {
   font-size: var(--h1-font-size);
-  color: var(--title-color);
+  color: #000;
+}
+
+
+body.dark-mode .section__title {
+ color: #fff;
 }
 
 .section__subtitle {
