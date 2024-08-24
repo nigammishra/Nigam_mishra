@@ -1,0 +1,348 @@
+.work__filters {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 0.75rem;
+    margin-bottom: var(--mb-2);
+}
+
+.work__item {
+    color: var(--title-color);
+    padding: 0.25rem 0.75rem;
+    font-weight: var(--font-medium);
+    text-transform: capitalize;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+.work__item:hover {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+.work__container {
+    grid-template-columns: repeat(3, max-content);
+    /* gap: 3rem; */
+    justify-content: center;
+}
+
+.work__card {
+    background-color: var(--container-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1.25rem;
+    border-radius: 1rem;
+}
+
+.work__image {
+    width: 330px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 1rem;
+    margin-bottom: var(--mb-1);
+}
+
+.work__title {
+    font-size: var(--normal-font-size);
+    font-weight: var(-font-medium);
+    margin-bottom: var(--mb-0-5);
+}
+
+.work__button {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    display: flex;
+    align-items: center;
+    column-gap: 0.25rem;
+}
+
+.work__button-icon {
+    font-size: 1rem;
+    transition: 0.4s;
+}
+
+.work__button:hover .work__button-icon {
+    transform: translateX(0.25rem);
+}
+
+.active-work {
+    background-color: var(--title-color);
+    color: var(--container-color);
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .work__container{
+        gap: 1.25rem;
+    }
+
+    .work__card{
+        padding: 1rem;
+    }
+
+    .work__img{
+        margin-bottom: 0.75rem;
+    }
+    .work__title{
+        margin-bottom: 0.25rem;
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 768px) {
+    .work__container{
+        grid-template-columns: max-content;
+    }
+}
+
+@media screen and (max-width: 576px) {
+        .work__container{
+            grid-template-columns: 1fr;
+        }
+
+        .work__img{
+            width: 100%;
+        }
+}
+
+/* For small devices */
+@media screen and (max-width: 350px) {
+    .work__item{
+        font-size: var(--small-font-size);
+    }
+
+    .work__filters{
+        column-gap: 0.25rem;
+    }
+}
+.projects-section {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.project-filter {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.project-filter-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.project-filter-list .filter {
+  padding: 10px 15px;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.project-filter-list .filter-active {
+  background-color: #333;
+  color: #fff;
+}
+
+.project-filter-list .filter:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Make the container block instead of flex */
+.project-container {
+  display: block; /* Changed from flex to block */
+  margin: 0 auto;
+  max-width: 1200px; /* Fixed width */
+}
+
+.project-grid-box {
+  /* width: 400px; Fixed width */
+  margin: 0 auto 20px auto; /* Center align */
+  box-sizing: border-box;
+  position: relative;
+}
+
+.project-single-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.project-image {
+  width: 100%;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.project-img-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.project-single-item:hover .project-image {
+  transform: scale(1.1);
+}
+
+.project-single-item:hover .project-img-overlay {
+  opacity: 1;
+  background-color: #f0f0f0;
+}
+
+.project-content {
+  color: #000;
+  text-align: center;
+}
+
+.project-content .info p {
+  margin: 0;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.project-content .info h6 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.popimg {
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: #fff;
+  transition: color 0.3s;
+}
+
+.popimg:hover {
+  color: #ccc;
+}
+
+.icon {
+  font-size: 20px;
+}
+
+/* New Button Styles */
+.project-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-btn {
+  padding: 8px 12px;
+  background-color: #fff;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.project-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+  
+  /* work.css */
+.projects-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ProjectFilter styling */
+.project-filter {
+  margin-bottom: 20px;
+}
+
+.project-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px; /* Adds spacing between items */
+}
+
+.filter {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: 000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.filter:hover {
+  background-color: #0056b3;
+}
+
+.filter-active {
+  background-color: #0056b3; /* Active filter color */
+}
+
+@media (max-width: 768px) {
+  .filter {
+    flex: 1 1 100%; /* Ensures the buttons take up full width on small screens */
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+/* Light mode (default) */
+.project-filter {
+  /* background-color: #fff; */
+  color: #000;
+}
+
+.project-filter-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px 0;
+}
+
+.filter-active {
+  font-weight: bold;
+}
+
+/* Dark mode */
+.dark-mode .project-filter {
+  /* background-color: #333; */
+  color: #000;
+}
+
+.dark-mode .project-filter-list .filter {
+  color: #000;
+}
+
+.dark-mode .project-filter-list .filter-active {
+  /* font-weight: bold; */
+  color: #fff;
+}
+
