@@ -29,7 +29,7 @@ const Footer = () => {
               }}
             >
               <div className="col-12" style={{ display: "contents" }}>
-                <Link to="/" className="">
+                <Link to="/Nigam_Portfolio2/" className="">
                   <img
                     src={isDarkMode ? whiteLogo : blackLogo}
                     alt="logo"

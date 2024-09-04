@@ -27,7 +27,7 @@ const App = () => {
       <Header />
       <main className="main">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/Nigam_Portfolio2/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/services" element={<Services />} />

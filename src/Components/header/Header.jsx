@@ -30,7 +30,7 @@ const Header = () => {
   return (
     <header className={`header ${isDarkMode ? 'dark-mode' : ''}`}>
       <nav className="nav container">
-        <Link to="/" className="nav__logo">
+        <Link to="/Nigam_Portfolio2/" className="nav__logo">
           <img
             src={isDarkMode ? whiteLogo : blackLogo}
             alt="logo"
@@ -40,7 +40,7 @@ const Header = () => {
         <div className={toggle ? 'nav_menu show_menu' : 'nav_menu'}>
           <ul className="nav__list mt-4">
             <li className="nav__item">
-              <Link to="/" className="nav__link active-link">
+              <Link to="/Nigam_Portfolio2/" className="nav__link active-link">
                 <i className="uil uil-estate nav__icon"></i> Home
               </Link>
             </li>
