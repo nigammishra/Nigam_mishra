@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nigam_Portfolio2/static/css/main.dccb3716.css",
-    "main.js": "/Nigam_Portfolio2/static/js/main.b7500d04.js",
+    "main.js": "/Nigam_Portfolio2/static/js/main.4b019cff.js",
     "static/media/project6.png": "/Nigam_Portfolio2/static/media/project6.140fb60d68324da4d242.png",
     "static/media/project9.png": "/Nigam_Portfolio2/static/media/project9.592eaa8b089363fbe09e.png",
     "static/media/nigammishra.pdf": "/Nigam_Portfolio2/static/media/nigammishra.bd30a7a5a442b28d5ea2.pdf",
@@ -20,10 +20,10 @@
     "static/media/whitelogo.png": "/Nigam_Portfolio2/static/media/whitelogo.c72396c04b7fb94339bb.png",
     "index.html": "/Nigam_Portfolio2/index.html",
     "main.dccb3716.css.map": "/Nigam_Portfolio2/static/css/main.dccb3716.css.map",
-    "main.b7500d04.js.map": "/Nigam_Portfolio2/static/js/main.b7500d04.js.map"
+    "main.4b019cff.js.map": "/Nigam_Portfolio2/static/js/main.4b019cff.js.map"
   },
   "entrypoints": [
     "static/css/main.dccb3716.css",
-    "static/js/main.b7500d04.js"
+    "static/js/main.4b019cff.js"
   ]
 }
