@@ -8,7 +8,9 @@ import project6AI from "../../assets/projects/project6.png";
 import project7femployee from "../../assets/projects/project7.png";
 import project8fLibrary from "../../assets/projects/project8.png";
 import project9APortfolio2 from "../../assets/projects/project9.png";
-// import project10 from '../../assets/projects/project5.png'
+import projectBicycle from '../../assets/projects/projectBicycle.png'
+import Reactportfolio2 from '../../assets/projects/Reactportfolio2.png'
+import projectGym from '../../assets/projects/projectGym.png'
 
 const projectData = [
   {
@@ -73,7 +75,7 @@ const projectData = [
     infoText: "Html Project For Learn About Artificial Intelligence, Machine Learning, and Data Science",
     title: "Artificial Intelligence",
     link: "assets/img/projects/projects-2.jpg",
-    category: "WebTemplete",
+    category: "",
     detailsLink: "https://example.com/project1-details",
     siteLink: "https://example.com/project1-site",
   },
@@ -109,6 +111,39 @@ const projectData = [
     category: "AnimatedPortfolio",
     detailsLink: "https://example.com/project1-details",
     siteLink: "https://example.com/project1-site",
+  },
+  {
+    id: 10,
+    image: projectBicycle,
+    imgAlt: "project image",
+    infoText: "Html templete of Bicycle Website",
+    title: "Track & Trails",
+    link: "assets/img/projects/projects-2.jpg",
+    category: "WebTemplete",
+    detailsLink: "https://github.com/nigammishra/bicycle-website.git",
+    siteLink: "https://nigammishra.github.io/bicycle-website",
+  },
+  {
+    id: 11,
+    image: Reactportfolio2,
+    imgAlt: "project image",
+    infoText: "React.js templete of Personal Website",
+    title: "Portfolio Website",
+    link: "assets/img/projects/projects-2.jpg",
+    category: "AnimatedPortfolio",
+    detailsLink: "https://github.com/nigammishra/Nigam_Portfolio2.git",
+    siteLink: "https://example.com/project1-site",
+  },
+  {
+    id: 12,
+    image: projectGym,
+    imgAlt: "project image",
+    infoText: "Html templete of Gym Website",
+    title: "Bhubaneswar Health Club",
+    link: "assets/img/projects/projects-2.jpg",
+    category: "WebTemplete",
+    detailsLink: "https://github.com/nigammishra/Gym-Templete.git",
+    siteLink: "https://nigammishra.github.io/Gym-Templete",
   },
   // Add more project objects as needed
 ];
