@@ -19,6 +19,7 @@ const Footer = () => {
             alignItems: "center",
           }}
         >
+          <img src="assets\readme\01.png" alt="" />
           <div class="col-md-6">
             <div
               className="row"
