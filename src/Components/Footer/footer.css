@@ -15,7 +15,8 @@
 .footer__title {
     text-align: center;
     margin-bottom: var(--mb-2);
-}
+    font-family: cursive;
+  }
 
 .footer__link:hover {
     color: var(--title-dark-color);
