@@ -107,6 +107,8 @@
 .services__modal-icon {
     color: var(--title-color);
     font-size: 1.1rem;
+    top: -9px;
+    position: relative;
 }
 
 .services__modal-info {

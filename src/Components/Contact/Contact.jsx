@@ -12,7 +12,7 @@ const Contact = () => {
         emailjs
             .sendForm(
                 "service_ql1vszp",
-                "template_okwyeao",
+                "template_fuafqmn",
                 form.current,
                 "GWBqfW43QZ_MiFFFo"
             )
@@ -78,7 +78,7 @@ const Contact = () => {
                         <div className="contact__form-div">
                             <label className="contact__form-tags">Name</label>
                             <input
-                                type="text"
+                                type="name"
                                 name="name"
                                 className="contact__form-input"
                                 placeholder="Insert your Name"
