@@ -1,4 +1,6 @@
 import React from "react";
+import { ReactTyped as Typed } from 'react-typed';
+
 
 const Data = () => {
   return (
@@ -55,7 +57,14 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Web Developer</h3>
+      <h2 className="home__subtitle">
+      <Typed
+        strings={["Web Developer", "React.js Developer", "Frontend Developer", "Freelancer"]}
+        typeSpeed={100}
+        backSpeed={50}
+        loop
+      />
+    </h2>
       <p className="home__description">
         I'm Creative Developer based in India, Odisha, and I am very
         passionate and dedicated to my work

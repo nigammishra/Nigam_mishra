@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./services.css";
+import { RotatingTriangles } from "react-loader-spinner";
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
@@ -9,7 +10,32 @@ const Services = () => {
   // const toggleDarkMode = () => {
   //   document.body.classList.toggle("dark-mode");
   // };
+  const [loading, setLoading] = useState(true);
+
+  // Simulate loading time with useEffect
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 2000); // Loader will be visible for 3 seconds
+
+    return () => clearTimeout(timer);
+  }, []);
   return (
+    <>
+     {loading ? (
+        <div className="loader-container">
+           <RotatingTriangles
+              visible={true}
+              height="100"
+              width="100"
+              ariaLabel="hourglass-loading"
+              wrapperStyle={{}}
+              wrapperClass=""
+              // color={isDarkMode ? '#ffffff' : '#000000'}  // Change the color based on mode
+            />
+        </div>
+      ) : (
+     
     <section className="services section" id="services">
       <h2 className="section__title">Services</h2>
       <span className="section__subtitle">What i Offer</span>
@@ -181,6 +207,8 @@ const Services = () => {
         </div>
       </div>
     </section>
+     )}
+    </>
   );
 };
 

@@ -39,32 +39,32 @@ const Header = () => {
         </Link>
         <div className={toggle ? 'nav_menu show_menu' : 'nav_menu'}>
           <ul className="nav__list mt-4">
-            <li className="nav__item">
+            <li className="nav__item"onClick={() => setToggle(!toggle)}>
               <Link to="/Nigam_Portfolio2/" className="nav__link active-link">
                 <i className="uil uil-estate nav__icon"></i> Home
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item"onClick={() => setToggle(!toggle)}>
               <Link to="/about" className="nav__link">
                 <i className="uil uil-user nav__icon"></i> About
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item"onClick={() => setToggle(!toggle)}>
               <Link to="/skills" className="nav__link">
                 <i className="uil uil-file-alt nav__icon"></i> Skills
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item"onClick={() => setToggle(!toggle)}>
               <Link to="/services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i> Services
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item"onClick={() => setToggle(!toggle)}>
               <Link to="/work" className="nav__link">
                 <i className="uil uil-scenery nav__icon"></i> Portfolio
               </Link>
             </li>
-            <li className="nav__item">
+            <li className="nav__item" onClick={() => setToggle(!toggle)}>
               <Link to="/contact" className="nav__link">
                 <i className="uil uil-message nav__icon"></i> Contact
               </Link>

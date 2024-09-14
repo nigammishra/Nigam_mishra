@@ -262,3 +262,12 @@ p.dark-mode{
   visibility: visible;
   opacity: 1;
 }
+
+
+.loader-container {
+  text-align: center;
+  margin: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
