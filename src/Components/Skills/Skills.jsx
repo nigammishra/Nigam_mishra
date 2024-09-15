@@ -35,7 +35,7 @@ const Skills = () => {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); // Loader will be visible for 3 seconds
+    }, 1000); // Loader will be visible for 3 seconds
 
     return () => clearTimeout(timer);
   }, []);

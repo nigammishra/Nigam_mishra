@@ -273,8 +273,13 @@ p.dark-mode{
 }
 .loader-container-main {
   text-align: center;
-  margin-top: 70%;
+  margin: 15%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (max-width: 768px) {
+  .loader-container-main  {
+    margin-top: 70%;
+  }
 }
