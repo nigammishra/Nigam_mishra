@@ -36,7 +36,7 @@ const App = () => {
   return (
     <>
     {loading ? (
-      <div className="loader-container">
+      <div className="loader-container-main">
          <RotatingTriangles
             visible={true}
             height="100"

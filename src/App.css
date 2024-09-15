@@ -271,3 +271,10 @@ p.dark-mode{
   justify-content: center;
   align-items: center;
 }
+.loader-container-main {
+  text-align: center;
+  margin-top: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
