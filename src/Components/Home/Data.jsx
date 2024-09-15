@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ReactTyped as Typed } from 'react-typed';
 
 
@@ -57,7 +58,7 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h2 className="home__subtitle">
+      <h2 className="home__subtitle" style={{fontWeight:700}}>
       <Typed
         strings={["Web Developer", "React.js Developer", "Frontend Developer", "Freelancer"]}
         typeSpeed={100}
@@ -69,7 +70,7 @@ const Data = () => {
         I'm Creative Developer based in India, Odisha, and I am very
         passionate and dedicated to my work
       </p>
-      <a href="/contact" className="button button--flex">
+      <Link to="/contact" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"
@@ -88,7 +89,7 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
