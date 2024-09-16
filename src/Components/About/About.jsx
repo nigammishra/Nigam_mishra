@@ -81,7 +81,7 @@ const About = () => {
               username="nigammishra"
               blockSize={15}
               blockMargin={5}
-              color="#000"
+              color="#1f3e99"
               fontSize={16}
             />
           </div>
