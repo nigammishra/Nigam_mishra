@@ -7,7 +7,7 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Services from "./Components/Services/Services";
-// import Qualification from "./Components/Qualification/Qualification";
+import Resume from "./Components/Resume";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Scrollup from "./Components/Scroll-Up/Scrollup";
@@ -56,7 +56,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/services" element={<Services />} />
-          {/* <Route path="/qualification" element={<Qualification />} /> */}
+          <Route path="/resume" element={<Resume />} />
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

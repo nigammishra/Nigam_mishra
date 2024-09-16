@@ -55,6 +55,11 @@ const Header = () => {
               </Link>
             </li>
             <li className="nav__item"onClick={() => setToggle(!toggle)}>
+              <Link to="/resume" className="nav__link">
+                <i className="uil uil-file-alt nav__icon"></i> Resume
+              </Link>
+            </li>
+            <li className="nav__item"onClick={() => setToggle(!toggle)}>
               <Link to="/services" className="nav__link">
                 <i className="uil uil-briefcase-alt nav__icon"></i> Services
               </Link>
@@ -76,8 +81,8 @@ const Header = () => {
           ></i>
         </div>
         <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
-          <i className="uil uil-apps"></i>
-        </div>
+        <i className="uil uil-apps" style={{ color: isDarkMode ? "white" : "black" }}></i>
+      </div>
         <button onClick={toggleTheme} className="theme-toggle-button">
           {isDarkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
         </button>
