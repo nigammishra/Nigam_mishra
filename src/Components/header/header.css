@@ -162,10 +162,10 @@
 } */
 
 /* Dark mode styles */
-.header.dark-mode {
+/* .header.dark-mode {
   background-color: var(--header-bg-dark);
   color: var(--header-text-dark);
-}
+} */
 
 .theme-toggle-button {
   background-color: var(--button-bg-dark);
@@ -185,12 +185,12 @@
     transition: all 0.3s ease; /* Smooth transition for logo change */
   }
   
-  /* Additional dark mode styles */
+  /* Additional dark mode styles
   .header.dark-mode .nav__link {
-    color: #fff; /* White text in dark mode */
+    color: #fff; /* White text in dark mode 
   }
   
   .header.dark-mode .nav__list {
-    background-color: #000; /* Dark background for navigation list */
+    background-color: #000; /* Dark background for navigation list 
   }
-  
+   */
