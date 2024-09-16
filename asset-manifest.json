@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Nigam_Portfolio2/static/css/main.df079f04.css",
-    "main.js": "/Nigam_Portfolio2/static/js/main.808606bf.js",
+    "main.css": "/Nigam_Portfolio2/static/css/main.438bb600.css",
+    "main.js": "/Nigam_Portfolio2/static/js/main.109914fe.js",
     "static/media/project6.png": "/Nigam_Portfolio2/static/media/project6.140fb60d68324da4d242.png",
     "static/media/project9.png": "/Nigam_Portfolio2/static/media/project9.592eaa8b089363fbe09e.png",
     "static/media/nigammishra.pdf": "/Nigam_Portfolio2/static/media/nigammishra.bd30a7a5a442b28d5ea2.pdf",
@@ -16,14 +16,15 @@
     "static/media/project2.png": "/Nigam_Portfolio2/static/media/project2.a78facf847a28cde23d9.png",
     "static/media/project4.png": "/Nigam_Portfolio2/static/media/project4.fa3f41e686c439e449de.png",
     "static/media/nigam.jpg": "/Nigam_Portfolio2/static/media/nigam.97e8a098b5de1999d853.jpg",
+    "static/media/ATS2.pdf": "/Nigam_Portfolio2/static/media/ATS2.3b5ef9d9266f79432cbb.pdf",
     "static/media/blacklogo.png": "/Nigam_Portfolio2/static/media/blacklogo.4854e43c647122252827.png",
     "static/media/whitelogo.png": "/Nigam_Portfolio2/static/media/whitelogo.c72396c04b7fb94339bb.png",
     "index.html": "/Nigam_Portfolio2/index.html",
-    "main.df079f04.css.map": "/Nigam_Portfolio2/static/css/main.df079f04.css.map",
-    "main.808606bf.js.map": "/Nigam_Portfolio2/static/js/main.808606bf.js.map"
+    "main.438bb600.css.map": "/Nigam_Portfolio2/static/css/main.438bb600.css.map",
+    "main.109914fe.js.map": "/Nigam_Portfolio2/static/js/main.109914fe.js.map"
   },
   "entrypoints": [
-    "static/css/main.df079f04.css",
-    "static/js/main.808606bf.js"
+    "static/css/main.438bb600.css",
+    "static/js/main.109914fe.js"
   ]
 }
