@@ -7,13 +7,14 @@ import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Skills from "./Components/Skills/Skills";
 import Services from "./Components/Services/Services";
-import Resume from "./Components/Resume";
+// import Resume from "./Components/Resume";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
 import Scrollup from "./Components/Scroll-Up/Scrollup";
 import Work from "./Components/Work/Work";
 import { ThemeContext } from "./ThemeContext"; // Import ThemeContext
 import { RotatingTriangles } from "react-loader-spinner";
+import ResumeNew from "./Components/ResumeNew";
 
 const App = () => {
   const { isDarkMode } = useContext(ThemeContext); // Use ThemeContext
@@ -56,7 +57,7 @@ const App = () => {
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/services" element={<Services />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/resume" element={<ResumeNew />} />
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
