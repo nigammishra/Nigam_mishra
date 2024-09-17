@@ -194,3 +194,9 @@
     background-color: #000; /* Dark background for navigation list 
   }
    */
+   /* For small devices */
+@media screen and (min-width: 568px) {
+    .header.dark-mode .nav__link {
+        color: #fff; 
+      }
+}
