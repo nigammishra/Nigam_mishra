@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from 'react-helmet'; // Import Helmet for SEO
 import "./about.css";
 import AboutImg from "../../assets/nigam.jpg";
 import CV from "../../assets/nigammishra.pdf";
@@ -19,6 +20,34 @@ const About = () => {
 
   return (
     <>
+      {/* SEO Meta Tags */}
+      <Helmet>
+        <title>Nigam Mishra - About Me | Full Stack Developer</title>
+        <meta
+          name="description"
+          content="Learn more about Nigam Mishra, a Full Stack Developer with 2 years of experience. Skilled in Frontend and Backend technologies, delivering quality projects."
+        />
+        <meta
+          name="keywords"
+          content="Nigam Mishra, Full Stack Developer, Frontend, Backend, React, JavaScript, GitHub calendar, Portfolio"
+        />
+        <meta
+          name="author"
+          content="Nigam Mishra"
+        />
+        <meta property="og:title" content="Nigam Mishra - Full Stack Developer" />
+        <meta
+          property="og:description"
+          content="Full Stack Developer with expertise in creating responsive websites and applications using modern web technologies."
+        />
+        <meta
+          property="og:image"
+          content="https://github.com/nigammishra/Nigam_Portfolio2/blob/main/src/assets/nigam.jpg" // Replace with your about page image link
+        />
+        <meta property="og:url" content="https://nigammishra.github.io/about" /> {/* Replace with your actual URL */}
+        <meta name="robots" content="index, follow" />
+      </Helmet>
+
       {loading ? (
         <div className="loader-container">
           <RotatingTriangles
@@ -28,7 +57,6 @@ const About = () => {
             ariaLabel="hourglass-loading"
             wrapperStyle={{}}
             wrapperClass=""
-            // color={isDarkMode ? '#ffffff' : '#000000'}  // Change the color based on mode
           />
         </div>
       ) : (
@@ -36,13 +64,11 @@ const About = () => {
           <h2 className="section__title">About Me</h2>
           <span className="section__subtitle">My introduction</span>
           <div className="about_container container grid">
-            <img src={AboutImg} className="about__img" alt="" />
+            <img src={AboutImg} className="about__img" alt="Nigam Mishra" />
             <div className="about__data">
               <Info />
               <p className="about__description">
-                Full Stack Developer, with 2 Years Of Experience Learning
-                From Youtube, I can create web pages with UI/UX FrontEnd & BackEnd user interface,
-                many clients are happy with projects carried out.
+                Full Stack Developer with 1 Years Of Experience Learning From YouTube. I create web pages with UI/UX frontend and backend interfaces. Many clients are happy with the projects carried out.
               </p>
               <a href={CV} className="button button--flex" download="">
                 Download CV{" "}
@@ -75,8 +101,7 @@ const About = () => {
             </div>
           </div>
           <h3 className="calendar-title">Days <strong>I Code</strong></h3>
-          <div className="calendar-container" style={{display:'flex',justifyContent:'center'}}>
-            
+          <div className="calendar-container" style={{ display: 'flex', justifyContent: 'center' }}>
             <GitHubCalendar
               username="nigammishra"
               blockSize={15}

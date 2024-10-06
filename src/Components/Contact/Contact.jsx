@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import Swal from 'sweetalert2';
+import { Helmet } from 'react-helmet';
 import "./contact.css";
 import { RotatingTriangles } from 'react-loader-spinner';
 
@@ -12,7 +13,7 @@ const Contact = () => {
     useEffect(() => {
       const timer = setTimeout(() => {
         setLoading(false);
-      }, 1000); // Loader will be visible for 3 seconds
+      }, 1000); // Loader will be visible for 1 second
   
       return () => clearTimeout(timer);
     }, []);
@@ -60,11 +61,18 @@ const Contact = () => {
               ariaLabel="hourglass-loading"
               wrapperStyle={{}}
               wrapperClass=""
-            //   color={isDarkMode ? '#ffffff' : '#000000'}  // Change the color based on mode
             />
         </div>
       ) : (
-   
+        <>
+        <Helmet>
+            <title>Contact Me - Nigam Mishra</title>
+            <meta name="description" content="Get in touch with Nigam Mishra. Contact me for web development projects or inquiries through email or WhatsApp." />
+            <meta name="keywords" content="Contact, Nigam Mishra, Web Development, Email, WhatsApp" />
+            <meta name="robots" content="index, follow" />
+            <meta name="author" content="Nigam Mishra" />
+        </Helmet>
+
         <section className="contact section" id="contact">
             <h2 className="section__title">Get in Touch</h2>
             <span className="section__subtitle">Contact Me</span>
@@ -73,27 +81,29 @@ const Contact = () => {
                     <h3 className="contact__title">Talk to me</h3>
                     <div className="contact__info">
                         <div className="contact__card">
-                            <i className="bx bx-mail-send contact__card-icon"></i>
+                            <i className="bx bx-mail-send contact__card-icon" aria-hidden="true"></i>
                             <h3 className="contact__card-title">Email</h3>
                             <span className="contact__card-data">nigammishra1103@gmail.com</span>
                             <a
                                 href="mailto:nigammishra1103@gmail.com"
                                 className="contact__button"
+                                aria-label="Send me an email"
                             >
                                 Write me{" "}
-                                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                <i className="bx bx-right-arrow-alt contact__button-icon" aria-hidden="true"></i>
                             </a>
                         </div>
                         <div className="contact__card">
-                            <i className="bx bxl-whatsapp contact__card-icon"></i>
+                            <i className="bx bxl-whatsapp contact__card-icon" aria-hidden="true"></i>
                             <h3 className="contact__card-title">Whatsapp</h3>
                             <span className="contact__card-data">8260821103</span>
                             <a
                                 href="https://api.whatsapp.com/send?phone=8260821103&text=Hello, more information!"
                                 className="contact__button"
+                                aria-label="Contact me via WhatsApp"
                             >
                                 Write me{" "}
-                                <i className="bx bx-right-arrow-alt contact__button-icon"></i>
+                                <i className="bx bx-right-arrow-alt contact__button-icon" aria-hidden="true"></i>
                             </a>
                         </div>
                     </div>
@@ -104,10 +114,11 @@ const Contact = () => {
                         <div className="contact__form-div">
                             <label className="contact__form-tags">Name</label>
                             <input
-                                type="name"
+                                type="text"
                                 name="name"
                                 className="contact__form-input"
                                 placeholder="Insert your Name"
+                                required
                             />
                         </div>
                         <div className="contact__form-div">
@@ -117,6 +128,7 @@ const Contact = () => {
                                 name="email"
                                 className="contact__form-input"
                                 placeholder="Insert your Email"
+                                required
                             />
                         </div>
                         <div className="contact__form-div contact__form-area">
@@ -127,9 +139,10 @@ const Contact = () => {
                                 placeholder="Write your Project"
                                 cols={30}
                                 rows={10}
+                                required
                             ></textarea>
                         </div>
-                        <button className="button button--flex">
+                        <button className="button button--flex" aria-label="Send message">
                             Send Message
                             <svg
                                 className="button__icon"
@@ -153,6 +166,7 @@ const Contact = () => {
                 </div>
             </div>
         </section>
+        </>
          )}
         </>
     );
