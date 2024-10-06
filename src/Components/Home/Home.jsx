@@ -30,7 +30,7 @@ const Home = ({ isDarkMode }) => {
         <meta property="og:title" content="Nigam's Portfolio - Frontend Ace Developer" />
         <meta property="og:description" content="Explore the top frontend projects by Nigam Mishra, including tourism management systems and modern web design." />
         <meta property="og:image" content="https://github.com/user-attachments/assets/f3e10850-1740-4b2a-97f6-25b9449eaecf" />
-        <meta property="og:url" content="https://nigammishra.github.io/Nigam_Portfolio2/" />
+        <meta property="og:url" content="https://nigammishra.github.io/Nigam_mishra/" />
       </Helmet>
       {loading ? (
         <div className="loader-container">

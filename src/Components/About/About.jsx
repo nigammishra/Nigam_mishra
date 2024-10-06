@@ -42,7 +42,7 @@ const About = () => {
         />
         <meta
           property="og:image"
-          content="https://github.com/nigammishra/Nigam_Portfolio2/blob/main/src/assets/nigam.jpg" // Replace with your about page image link
+          content="https://github.com/nigammishra/Nigam_mishra/blob/main/src/assets/nigam.jpg" // Replace with your about page image link
         />
         <meta property="og:url" content="https://nigammishra.github.io/about" /> {/* Replace with your actual URL */}
         <meta name="robots" content="index, follow" />
