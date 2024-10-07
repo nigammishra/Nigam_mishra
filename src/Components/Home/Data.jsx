@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import { ReactTyped as Typed } from 'react-typed';
 
 
@@ -70,7 +70,7 @@ const Data = () => {
         I'm Creative Developer based in India, Odisha, and I am very
         passionate and dedicated to my work
       </p>
-      <Link to="/contact" className="button button--flex">
+      <a href="/contact" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"
@@ -89,7 +89,7 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </Link>
+      </a>
     </div>
   );
 };
