@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nigam_mishra/static/css/main.cd747a39.css",
-    "main.js": "/Nigam_mishra/static/js/main.4e87f171.js",
+    "main.js": "/Nigam_mishra/static/js/main.8fa2f7ab.js",
     "static/media/project6.png": "/Nigam_mishra/static/media/project6.140fb60d68324da4d242.png",
     "static/media/project9.png": "/Nigam_mishra/static/media/project9.592eaa8b089363fbe09e.png",
     "static/media/nigammishra.pdf": "/Nigam_mishra/static/media/nigammishra.bd30a7a5a442b28d5ea2.pdf",
@@ -16,15 +16,15 @@
     "static/media/project2.png": "/Nigam_mishra/static/media/project2.a78facf847a28cde23d9.png",
     "static/media/project4.png": "/Nigam_mishra/static/media/project4.fa3f41e686c439e449de.png",
     "static/media/nigam.jpg": "/Nigam_mishra/static/media/nigam.97e8a098b5de1999d853.jpg",
-    "static/media/ATS2.pdf": "/Nigam_mishra/static/media/ATS2.3b5ef9d9266f79432cbb.pdf",
+    "static/media/ATS2.pdf": "/Nigam_mishra/static/media/ATS2.9ab6c4ae1d795ff92947.pdf",
     "static/media/blacklogo.png": "/Nigam_mishra/static/media/blacklogo.4854e43c647122252827.png",
     "static/media/whitelogo.png": "/Nigam_mishra/static/media/whitelogo.c72396c04b7fb94339bb.png",
     "index.html": "/Nigam_mishra/index.html",
     "main.cd747a39.css.map": "/Nigam_mishra/static/css/main.cd747a39.css.map",
-    "main.4e87f171.js.map": "/Nigam_mishra/static/js/main.4e87f171.js.map"
+    "main.8fa2f7ab.js.map": "/Nigam_mishra/static/js/main.8fa2f7ab.js.map"
   },
   "entrypoints": [
     "static/css/main.cd747a39.css",
-    "static/js/main.4e87f171.js"
+    "static/js/main.8fa2f7ab.js"
   ]
 }
