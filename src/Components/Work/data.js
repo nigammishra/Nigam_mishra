@@ -11,6 +11,7 @@ import project9APortfolio2 from "../../assets/projects/project9.png";
 import projectBicycle from '../../assets/projects/projectBicycle.png'
 import Reactportfolio2 from '../../assets/projects/Reactportfolio2.png'
 import projectGym from '../../assets/projects/projectGym.png'
+import mainportfolio from '../../assets/projects/mainPortfolio.png'
 
 const projectData = [
   {
@@ -136,6 +137,17 @@ const projectData = [
   },
   {
     id: 12,
+    image: mainportfolio,
+    imgAlt: "project image",
+    infoText: "React.js templete of Personal Website",
+    title: "Portfolio Website",
+    link: "assets/img/projects/projects-2.jpg",
+    category: "AnimatedPortfolio",
+    detailsLink: "https://github.com/nigammishra/Nigam_Portfolio2.git",
+    siteLink: "https://example.com/project1-site",
+  },
+  {
+    id: 13,
     image: projectGym,
     imgAlt: "project image",
     infoText: "Html templete of Gym Website",
