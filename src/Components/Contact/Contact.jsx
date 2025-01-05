@@ -108,24 +108,25 @@ const Contact = () => {
                     </a>
                   </div>
                   <div className="contact__card">
-                    <i
-                      className="bx bxl-whatsapp contact__card-icon"
-                      aria-hidden="true"
-                    ></i>
-                    <h3 className="contact__card-title">WhatsApp</h3>
-                    {/* <span className="contact__card-data">8260821103</span> */}
-                    <a
-                      href="https://api.whatsapp.com/send?phone=8260821103&text=Hello!%0AThank you for reaching out. I offer the following services:%0A%0A• Designing (UI/UX, graphics, and more)%0A%0A• Development (Web, app, and software solutions)%0A%0A• Portfolio Creation (Personal or professional portfolio designs)%0A%0A• Template Design & Development (Custom templates for various platforms)%0A%0AFeel free to share your project details or queries. Let’s collaborate to bring your ideas to life!"
-                      className="contact__button"
-                      aria-label="Contact me via WhatsApp"
-                    >
-                      Write me{" "}
-                      <i
-                        className="bx bx-right-arrow-alt contact__button-icon"
-                        aria-hidden="true"
-                      ></i>
-                    </a>
-                  </div>
+  <i
+    className="bx bxl-whatsapp contact__card-icon"
+    aria-hidden="true"
+  ></i>
+  <h3 className="contact__card-title">WhatsApp</h3>
+  <span className="contact__card-data">8260821103</span>
+  <a
+    href="https://api.whatsapp.com/send?phone=8260821103&text=Hello!%0AThank%20you%20for%20reaching%20out.%20I%20offer%20the%20following%20services:%0A%0A•%20Designing%20(UI/UX,%20graphics,%20and%20more)%0A•%20Development%20(Web,%20app,%20and%20software%20solutions)%0A•%20Portfolio%20Creation%20(Personal%20or%20professional%20portfolio%20designs)%0A•%20Template%20Design%20%26%20Development%20(Custom%20templates%20for%20various%20platforms)%0A%0AFeel%20free%20to%20share%20your%20project%20details%20or%20queries.%20Let%E2%80%99s%20collaborate%20to%20bring%20your%20ideas%20to%20life!"
+    className="contact__button"
+    aria-label="Contact me via WhatsApp"
+  >
+    Write me{" "}
+    <i
+      className="bx bx-right-arrow-alt contact__button-icon"
+      aria-hidden="true"
+    ></i>
+  </a>
+</div>
+
                 </div>
               </div>
               <div className="contact__content">
