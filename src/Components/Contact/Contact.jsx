@@ -92,9 +92,9 @@ const Contact = () => {
                       aria-hidden="true"
                     ></i>
                     <h3 className="contact__card-title">Email</h3>
-                    <span className="contact__card-data">
+                    {/* <span className="contact__card-data">
                       nigammishra1103@gmail.com
-                    </span>
+                    </span> */}
                     <a
                       href="mailto:nigammishra1103@gmail.com"
                       className="contact__button"
@@ -113,9 +113,9 @@ const Contact = () => {
                       aria-hidden="true"
                     ></i>
                     <h3 className="contact__card-title">WhatsApp</h3>
-                    <span className="contact__card-data">8260821103</span>
+                    {/* <span className="contact__card-data">8260821103</span> */}
                     <a
-                      href="https://api.whatsapp.com/send?phone=8260821103&text=Hello, more information!%0A• Designing%0A• Development%0A• Portfolio Making%0A• Template Design and Development"
+                      href="https://api.whatsapp.com/send?phone=8260821103&text=Hello!%0AThank you for reaching out. I offer the following services:%0A%0A• Designing (UI/UX, graphics, and more)%0A%0A• Development (Web, app, and software solutions)%0A%0A• Portfolio Creation (Personal or professional portfolio designs)%0A%0A• Template Design & Development (Custom templates for various platforms)%0A%0AFeel free to share your project details or queries. Let’s collaborate to bring your ideas to life!"
                       className="contact__button"
                       aria-label="Contact me via WhatsApp"
                     >
