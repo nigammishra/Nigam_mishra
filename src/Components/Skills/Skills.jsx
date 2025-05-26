@@ -25,6 +25,9 @@ import {
   SiCodechef,
   SiMacos,
   SiWindows11,
+  SiSpringboot,
+  SiIntellijidea,
+  SiEclipseche,
 } from "react-icons/si";
 import { RotatingTriangles } from "react-loader-spinner";
 
@@ -140,6 +143,10 @@ const Skills = () => {
               <span className="tooltip-text">Java</span>
             </div>
             <div className="icon-container">
+              <SiSpringboot size={50} color="#6DB33F" />
+              <span className="tooltip-text">Spring Boot</span>
+            </div>
+            <div className="icon-container">
               <DiJavascript1 size={50} color="#F7DF1E" />
               <span className="tooltip-text">JavaScript</span>
             </div>
@@ -197,6 +204,14 @@ const Skills = () => {
             <div className="icon-container">
               <SiNotepadplusplus size={50} color="#5C2D91" />
               <span className="tooltip-text">Notepad++</span>
+            </div>
+            <div className="icon-container">
+              <SiEclipseche size={50} color="#2C2255" /> 
+              <span className="tooltip-text">Eclipse</span>
+            </div>
+            <div className="icon-container">
+              <SiIntellijidea size={50} color={isDarkMode ? "#FFFFFF" : "#000000"} /> 
+              <span className="tooltip-text">IntelliJ IDEA</span>
             </div>
           </div>
         </section>

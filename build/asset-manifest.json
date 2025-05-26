@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Nigam_mishra/static/css/main.cd747a39.css",
-    "main.js": "/Nigam_mishra/static/js/main.9f7b14a5.js",
+    "main.js": "/Nigam_mishra/static/js/main.cd5133fd.js",
     "static/media/mainPortfolio.png": "/Nigam_mishra/static/media/mainPortfolio.a65b5325336e4ce449a7.png",
     "static/media/project6.png": "/Nigam_mishra/static/media/project6.140fb60d68324da4d242.png",
     "static/media/project9.png": "/Nigam_mishra/static/media/project9.592eaa8b089363fbe09e.png",
@@ -12,19 +12,19 @@
     "static/media/projectGym.png": "/Nigam_mishra/static/media/projectGym.35cb1a727544da1d65b9.png",
     "static/media/project3.png": "/Nigam_mishra/static/media/project3.2cba3703cfa9b10f5714.png",
     "static/media/project8.png": "/Nigam_mishra/static/media/project8.43ab71da5edda7ca26aa.png",
+    "static/media/nigammishra.pdf": "/Nigam_mishra/static/media/nigammishra.a7e4b3f732fd0d979236.pdf",
     "static/media/projectBicycle.png": "/Nigam_mishra/static/media/projectBicycle.01d0d0702cc6a6f87446.png",
     "static/media/project2.png": "/Nigam_mishra/static/media/project2.a78facf847a28cde23d9.png",
     "static/media/project4.png": "/Nigam_mishra/static/media/project4.fa3f41e686c439e449de.png",
     "static/media/nigam.jpg": "/Nigam_mishra/static/media/nigam.97e8a098b5de1999d853.jpg",
-    "static/media/nigammishra.pdf": "/Nigam_mishra/static/media/nigammishra.9ab6c4ae1d795ff92947.pdf",
     "static/media/blacklogo.png": "/Nigam_mishra/static/media/blacklogo.4854e43c647122252827.png",
     "static/media/whitelogo.png": "/Nigam_mishra/static/media/whitelogo.c72396c04b7fb94339bb.png",
     "index.html": "/Nigam_mishra/index.html",
     "main.cd747a39.css.map": "/Nigam_mishra/static/css/main.cd747a39.css.map",
-    "main.9f7b14a5.js.map": "/Nigam_mishra/static/js/main.9f7b14a5.js.map"
+    "main.cd5133fd.js.map": "/Nigam_mishra/static/js/main.cd5133fd.js.map"
   },
   "entrypoints": [
     "static/css/main.cd747a39.css",
-    "static/js/main.9f7b14a5.js"
+    "static/js/main.cd5133fd.js"
   ]
 }
