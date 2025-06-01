@@ -10,11 +10,12 @@ import Services from "./Components/Services/Services";
 // import Resume from "./Components/Resume";
 import Contact from "./Components/Contact/Contact";
 import Footer from "./Components/Footer/Footer";
-import Scrollup from "./Components/Scroll-Up/Scrollup";
+// import Scrollup from "./Components/Scroll-Up/Scrollup";
 import Work from "./Components/Work/Work";
 import { ThemeContext } from "./ThemeContext"; // Import ThemeContext
 import { RotatingTriangles } from "react-loader-spinner";
 import ResumeNew from "./Components/ResumeNew";
+import Chatbot from "./Components/ChatBot";
 
 const App = () => {
   const { isDarkMode } = useContext(ThemeContext); // Use ThemeContext
@@ -60,10 +61,12 @@ const App = () => {
           <Route path="/resume" element={<ResumeNew />} />
           <Route path="/work" element={<Work />} />
           <Route path="/contact" element={<Contact />} />
+          {/* <Route path="/chatbot" element={<Chatbot />} /> */}
         </Routes>
       </main>
       <Footer />
-      <Scrollup />
+      <Chatbot/>
+      {/* <Scrollup /> */}
     </Router>
      )}
     </>

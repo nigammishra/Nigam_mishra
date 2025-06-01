@@ -1,10 +1,11 @@
 {
   "files": {
     "main.css": "/Nigam_mishra/static/css/main.cd747a39.css",
-    "main.js": "/Nigam_mishra/static/js/main.cd5133fd.js",
+    "main.js": "/Nigam_mishra/static/js/main.0b480387.js",
     "static/media/mainPortfolio.png": "/Nigam_mishra/static/media/mainPortfolio.a65b5325336e4ce449a7.png",
     "static/media/project6.png": "/Nigam_mishra/static/media/project6.140fb60d68324da4d242.png",
     "static/media/project9.png": "/Nigam_mishra/static/media/project9.592eaa8b089363fbe09e.png",
+    "static/media/khana.png": "/Nigam_mishra/static/media/khana.177beca9d7aeb41bf63c.png",
     "static/media/project5.png": "/Nigam_mishra/static/media/project5.20774af0591adf0c9146.png",
     "static/media/Reactportfolio2.png": "/Nigam_mishra/static/media/Reactportfolio2.44fb3b556ffcb3ee3952.png",
     "static/media/project1.png": "/Nigam_mishra/static/media/project1.d7f525408da747a5a368.png",
@@ -12,19 +13,19 @@
     "static/media/projectGym.png": "/Nigam_mishra/static/media/projectGym.35cb1a727544da1d65b9.png",
     "static/media/project3.png": "/Nigam_mishra/static/media/project3.2cba3703cfa9b10f5714.png",
     "static/media/project8.png": "/Nigam_mishra/static/media/project8.43ab71da5edda7ca26aa.png",
-    "static/media/nigammishra.pdf": "/Nigam_mishra/static/media/nigammishra.a7e4b3f732fd0d979236.pdf",
     "static/media/projectBicycle.png": "/Nigam_mishra/static/media/projectBicycle.01d0d0702cc6a6f87446.png",
     "static/media/project2.png": "/Nigam_mishra/static/media/project2.a78facf847a28cde23d9.png",
     "static/media/project4.png": "/Nigam_mishra/static/media/project4.fa3f41e686c439e449de.png",
     "static/media/nigam.jpg": "/Nigam_mishra/static/media/nigam.97e8a098b5de1999d853.jpg",
+    "static/media/nigammishra.pdf": "/Nigam_mishra/static/media/nigammishra.463b3b1d3e527d79580a.pdf",
     "static/media/blacklogo.png": "/Nigam_mishra/static/media/blacklogo.4854e43c647122252827.png",
     "static/media/whitelogo.png": "/Nigam_mishra/static/media/whitelogo.c72396c04b7fb94339bb.png",
     "index.html": "/Nigam_mishra/index.html",
     "main.cd747a39.css.map": "/Nigam_mishra/static/css/main.cd747a39.css.map",
-    "main.cd5133fd.js.map": "/Nigam_mishra/static/js/main.cd5133fd.js.map"
+    "main.0b480387.js.map": "/Nigam_mishra/static/js/main.0b480387.js.map"
   },
   "entrypoints": [
     "static/css/main.cd747a39.css",
-    "static/js/main.cd5133fd.js"
+    "static/js/main.0b480387.js"
   ]
 }

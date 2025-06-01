@@ -1,0 +1,203 @@
+/* Container for the whole chatbox */
+.chatbox {
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  max-width: 100%;
+  height: 480px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
+}
+
+/* Scrollable message container */
+.chatMessages {
+  flex-grow: 1;
+  padding: 12px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Message bubbles */
+.message {
+  max-width: 75%;
+  padding: 10px 16px;
+  border-radius: 18px;
+  line-height: 1.4;
+  font-size: 14px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* User message aligned right */
+.userMessage {
+  align-self: flex-end;
+  background-color: #4f46e5; /* Indigo */
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+/* Bot message aligned left */
+.botMessage {
+  align-self: flex-start;
+  background-color: #e5e7eb; /* Light gray */
+  color: #111827;
+  border-bottom-left-radius: 4px;
+}
+
+/* Suggested questions container */
+.suggestedQuestions {
+  padding: 8px 12px;
+  background: #fff;
+  border-top: 1px solid #ddd;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+/* Suggested question buttons */
+.suggestedButton {
+  background-color: #f3f4f6; /* Gray-100 */
+  border: none;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 13px;
+  color: #374151;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+  white-space: nowrap;
+}
+
+.suggestedButton:hover {
+  background-color: #4f46e5;
+  color: white;
+}
+
+/* Input area container */
+.chatInputArea {
+  display: flex;
+  padding: 10px 12px;
+  border-top: 1px solid #ddd;
+  background: white;
+}
+
+/* Textarea styles */
+.chatTextarea {
+  flex-grow: 1;
+  resize: none;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  outline: none;
+  height: 42px;
+  transition: border-color 0.25s ease;
+}
+
+.chatTextarea:focus {
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.3);
+}
+
+/* Send button */
+.sendButton {
+  background-color: #4f46e5;
+  color: white;
+  border: none;
+  margin-left: 8px;
+  padding: 0 18px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.sendButton:hover {
+  background-color: #4338ca;
+}
+
+/* Scrollbar styling for chatMessages */
+.chatMessages::-webkit-scrollbar {
+  width: 6px;
+}
+
+.chatMessages::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.chatMessages::-webkit-scrollbar-thumb {
+  background-color: rgba(79, 70, 229, 0.4);
+  border-radius: 3px;
+}
+
+@media (max-width: 400px) {
+  .chatbox {
+    width: 100%;
+    height: 400px;
+  }
+}
+/* Floating chat toggle button */
+.chatToggleButton {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff;  /* Blue */
+  border: none;
+  color: white;
+  font-size: 24px;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+}
+.chatToggleButton:hover {
+  background-color: #0056b3;
+}
+
+/* Position the chatbox fixed near bottom right */
+.chatbox {
+  position: fixed;
+  bottom: 90px;  /* above the button */
+  right: 20px;
+  width: 320px;
+  max-height: 500px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  z-index: 1000;
+}
+
+/* (keep your existing chatbox styling inside here) */
+@media (max-width: 480px) {
+  .chatbox {
+    width: 90vw;        /* Make it take 90% of viewport width */
+    max-height: 60vh;   /* Limit max height on mobile */
+    bottom: 70px;       /* Slightly above the button */
+    right: 5vw;         /* Margin from right edge */
+    left: auto;         /* Ensure left isn't set */
+    border-radius: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .chatbox {
+    width: 100vw;
+    max-height: 70vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    border-radius: 0;
+  }
+}
