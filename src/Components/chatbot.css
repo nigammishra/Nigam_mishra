@@ -180,24 +180,3 @@
   z-index: 1000;
 }
 
-/* (keep your existing chatbox styling inside here) */
-@media (max-width: 480px) {
-  .chatbox {
-    width: 90vw;        /* Make it take 90% of viewport width */
-    max-height: 60vh;   /* Limit max height on mobile */
-    bottom: 70px;       /* Slightly above the button */
-    right: 5vw;         /* Margin from right edge */
-    left: auto;         /* Ensure left isn't set */
-    border-radius: 10px;
-  }
-}
-@media (max-width: 480px) {
-  .chatbox {
-    width: 100vw;
-    max-height: 70vh;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-radius: 0;
-  }
-}
