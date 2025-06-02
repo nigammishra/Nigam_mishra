@@ -146,8 +146,8 @@
 /* Floating chat toggle button */
 .chatToggleButton {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 94px;
+  right: 15px;
   background-color: #007bff;  /* Blue */
   border: none;
   color: white;
