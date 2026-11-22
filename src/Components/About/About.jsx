@@ -25,7 +25,7 @@ const About = () => {
         <title>Nigam Mishra - About Me | Full Stack Developer</title>
         <meta
           name="description"
-          content="Learn more about Nigam Mishra, a Full Stack Developer with 2 years of experience. Skilled in Frontend and Backend technologies, delivering quality projects."
+          content="Learn more about Nigam Mishra, a Full Stack Developer with 4 years of experience. Skilled in Frontend and Backend technologies, delivering quality projects."
         />
         <meta
           name="keywords"
@@ -68,7 +68,7 @@ const About = () => {
             <div className="about__data">
               <Info />
               <p className="about__description">
-                Full Stack Developer with 1 Years Of Experience Learning From YouTube. I create web pages with UI/UX frontend and backend interfaces. Many clients are happy with the projects carried out.
+               To build a successful career combining SAP S/4HANA Production Planning (PP) and Frontend Development, leveraging my knowledge of SAP business processes and modern web technologies like React.js. I aim to develop innovative solutions, contribute to organizational growth, and continuously strengthen my expertise in both domains.
               </p>
               <a href={CV} className="button button--flex" download="">
                 Download CV{" "}
