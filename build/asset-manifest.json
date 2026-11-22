@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/Nigam_mishra/static/css/main.2dc07e37.css",
-    "main.js": "/Nigam_mishra/static/js/main.da14ae9d.js",
+    "main.css": "/Nigam_mishra/static/css/main.17241eec.css",
+    "main.js": "/Nigam_mishra/static/js/main.4703f0a9.js",
     "static/media/mainPortfolio.png": "/Nigam_mishra/static/media/mainPortfolio.a65b5325336e4ce449a7.png",
     "static/media/project6.png": "/Nigam_mishra/static/media/project6.140fb60d68324da4d242.png",
     "static/media/project9.png": "/Nigam_mishra/static/media/project9.592eaa8b089363fbe09e.png",
     "static/media/khana.png": "/Nigam_mishra/static/media/khana.177beca9d7aeb41bf63c.png",
     "static/media/project5.png": "/Nigam_mishra/static/media/project5.20774af0591adf0c9146.png",
     "static/media/Reactportfolio2.png": "/Nigam_mishra/static/media/Reactportfolio2.44fb3b556ffcb3ee3952.png",
+    "static/media/nigamresumeAll-in-one1.pdf": "/Nigam_mishra/static/media/nigamresumeAll-in-one1.7c5fa829d4b9c5f6f063.pdf",
     "static/media/project1.png": "/Nigam_mishra/static/media/project1.d7f525408da747a5a368.png",
     "static/media/project7.png": "/Nigam_mishra/static/media/project7.aedad4b33332679d93c1.png",
     "static/media/projectGym.png": "/Nigam_mishra/static/media/projectGym.35cb1a727544da1d65b9.png",
@@ -21,11 +22,11 @@
     "static/media/blacklogo.png": "/Nigam_mishra/static/media/blacklogo.4854e43c647122252827.png",
     "static/media/whitelogo.png": "/Nigam_mishra/static/media/whitelogo.c72396c04b7fb94339bb.png",
     "index.html": "/Nigam_mishra/index.html",
-    "main.2dc07e37.css.map": "/Nigam_mishra/static/css/main.2dc07e37.css.map",
-    "main.da14ae9d.js.map": "/Nigam_mishra/static/js/main.da14ae9d.js.map"
+    "main.17241eec.css.map": "/Nigam_mishra/static/css/main.17241eec.css.map",
+    "main.4703f0a9.js.map": "/Nigam_mishra/static/js/main.4703f0a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2dc07e37.css",
-    "static/js/main.da14ae9d.js"
+    "static/css/main.17241eec.css",
+    "static/js/main.4703f0a9.js"
   ]
 }

@@ -1,9 +1,9 @@
 import React from "react";
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 const ScrolDown = () => {
   return (
     <div className="home__scroll">
-      <a href="/work" className="home__scroll-button button--flex">
+      <Link to="/work" className="home__scroll-button button--flex">
         <svg
           width="32px"
           height="32px"
@@ -43,7 +43,7 @@ const ScrolDown = () => {
           Portfolio
         </span>
         <i className="uil uil-arrow-right home__scroll-arrow"></i>
-      </a>
+      </Link>
     </div>
   );
 };

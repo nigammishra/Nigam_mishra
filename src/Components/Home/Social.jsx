@@ -12,7 +12,7 @@ const Social = () => {
         <i className="uil uil-twitter-alt"></i>
       </a>
       <a
-        href="https://www.instagram.com/mr_nigam_8199" // Replace this with your Instagram profile link
+        href="https://www.instagram.com/timelessclips/" // Replace this with your Instagram profile link
         className="home__social-icon"
         target="_blank" // Opens the link in a new tab
         rel="noopener noreferrer" // Improves security when opening external links

@@ -1,5 +1,5 @@
 import React from "react";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { ReactTyped as Typed } from 'react-typed';
 
 
@@ -60,17 +60,16 @@ const Data = () => {
       </h1>
       <h2 className="home__subtitle" style={{fontWeight:700}}>
       <Typed
-        strings={["Web Developer", "React.js Developer", "Frontend Developer", "Freelancer"]}
+        strings={["Web Developer", "React.js Developer", "Frontend Developer", "Freelancer","MERN Stack Developer","SAP s/4hana Functional Consultant","SAP s/4hana Production Planning Consultant"]}
         typeSpeed={100}
         backSpeed={50}
         loop
       />
     </h2>
       <p className="home__description">
-        I'm Creative Developer based in India, Odisha, and I am very
-        passionate and dedicated to my work
+        An aspiring technology professional with a strong foundation in SAP S/4HANA Production Planning (PP) and Frontend Development, passionate about building innovative solutions and continuously expanding technical expertise.
       </p>
-      <a href="/contact" className="button button--flex">
+      <Link to="/contact" className="button button--flex">
         Say Hello
         <svg
           class="button__icon"
@@ -89,7 +88,7 @@ const Data = () => {
             fill="var(--container-color)"
           ></path>
         </svg>
-      </a>
+      </Link>
     </div>
   );
 };
