@@ -80,9 +80,21 @@ const Header = () => {
             onClick={() => setToggle(!toggle)}
           ></i>
         </div>
-        <div className="nav__toggle" onClick={() => setToggle(!toggle)}>
-        <i className="uil uil-apps" style={{ color: isDarkMode ? "white" : "black" }}></i>
-      </div>
+       <div className="nav-toggle-wrapper">
+  <span className="nav-hint-arrow">➜</span>
+
+  <div className="nav-highlight-circle">
+    <div
+      className="nav__toggle"
+      onClick={() => setToggle(!toggle)}
+    >
+      <i
+        className="uil uil-apps"
+        style={{ color: isDarkMode ? "white" : "black" }}
+      ></i>
+    </div>
+  </div>
+</div>
         <button onClick={toggleTheme} className="theme-toggle-button">
           {isDarkMode ? <FaSun size={24} /> : <FaMoon size={24} />}
         </button>

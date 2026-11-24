@@ -201,4 +201,112 @@
       }
 }
 
+.nav-toggle-wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
 
+/* Highlight Circle */
+.nav-highlight-circle {
+  position: relative;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #8b5cf6;
+  border-radius: 50%;
+  background: rgba(139, 92, 246, 0.13);
+  box-shadow: 0 0 18px rgba(139, 92, 246, 0.5);
+  animation: navCircleGlow 1.6s infinite ease-in-out;
+}
+
+/* Menu Icon */
+.nav__toggle {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  z-index: 2;
+}
+
+/* Expanding Ring */
+.nav-highlight-circle::before {
+  content: "";
+  position: absolute;
+  inset: -7px;
+  border: 2px solid #8b5cf6;
+  border-radius: 50%;
+  animation: navRingPulse 1.8s infinite ease-out;
+  pointer-events: none;
+}
+
+/* Moving Arrow */
+.nav-hint-arrow {
+  position: absolute;
+  right: 65px;
+  font-size: 27px;
+  font-weight: bold;
+  color: #8b5cf6;
+  animation: navArrowMove 0.9s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* Animations */
+@keyframes navCircleGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(139, 92, 246, 0.35);
+    transform: scale(1);
+  }
+  50% {
+    box-shadow: 0 0 25px rgba(139, 92, 246, 0.8);
+    transform: scale(1.06);
+  }
+}
+
+@keyframes navRingPulse {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.9;
+  }
+  100% {
+    transform: scale(1.4);
+    opacity: 0;
+  }
+}
+
+@keyframes navArrowMove {
+  0%, 100% {
+    transform: translateX(0);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateX(8px);
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .nav-highlight-circle,
+  .nav-highlight-circle::before,
+  .nav-hint-arrow {
+    animation: none;
+  }
+}
+/* Hide highlight on laptop and desktop */
+.nav-toggle-wrapper {
+  display: none;
+}
+
+/* Show only on mobile and tablet */
+@media screen and (max-width: 768px) {
+  .nav-toggle-wrapper {
+    display: inline-flex;
+  }
+}
