@@ -4,6 +4,7 @@ import "./about.css";
 import AboutImg from "../../assets/nigam.jpg";
 import CV from "../../assets/nigammishra.pdf";
 import Info from "./Info";
+import Solutions from "./Solutions";
 import { RotatingTriangles } from "react-loader-spinner";
 import GitHubCalendar from "react-github-calendar"; // Correct import if using 'react-github-calendar'
 
@@ -17,6 +18,7 @@ const About = () => {
 
     return () => clearTimeout(timer);
   }, []);
+  
 
   return (
     <>
@@ -100,6 +102,8 @@ const About = () => {
               </a>
             </div>
           </div>
+          
+          <Solutions/>
           <h3 className="calendar-title">Days <strong>I Code</strong></h3>
           <div className="calendar-container" style={{ display: 'flex', justifyContent: 'center' }}>
             <GitHubCalendar
