@@ -60,7 +60,7 @@ const Data = () => {
       </h1>
       <h2 className="home__subtitle" style={{fontWeight:700}}>
       <Typed
-        strings={["Web Developer", "React.js Developer", "Frontend Developer", "Freelancer","MERN Stack Developer","SAP s/4hana Functional Consultant","SAP s/4hana Production Planning Consultant"]}
+        strings={["Web Developer", "React.js Developer", "Frontend Developer", "Freelancer","MERN Stack Developer","SAP s/4HANA Functional Consultant","SAP s/4HANA Production Planning Consultant"]}
         typeSpeed={100}
         backSpeed={50}
         loop
