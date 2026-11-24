@@ -2,9 +2,14 @@
 import React, { useRef, useEffect } from "react";
 // import "./Solutions.css";
 
-const Solutions = () => {
+import frontendImg from "../../assets/aboutcard/frontend.png";
+import sapImg from "../../assets/aboutcard/sap.png";
+import innovationImg from "../../assets/aboutcard/innovation.png";
+
+const Solutions = ({ isDarkMode }) => {
   const cardsRef = useRef([]);
 
+  // 3D Card Tilt Animation
   useEffect(() => {
     const cards = cardsRef.current;
 
@@ -48,74 +53,84 @@ const Solutions = () => {
     };
   }, []);
 
+  // About Cards Content
   const solutions = [
     {
-      category: "Nature-based solutions",
-      title: <>Forest & peatland<br />carbon projects</>,
+      category: "Frontend Development",
+      title: (
+        <>
+          Building Digital
+          <br />
+          Experiences
+        </>
+      ),
       description:
-        "Continuous flux measurement replaces sampled estimates, so credits reflect what the land actually absorbs.",
-      image:
-        "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025630_9a37a1e0-2547-4973-8160-c75205993914.png&w=1400&q=82",
-      position: "22% 70%",
-      backgroundSize: "260%",
+        "Creating responsive, interactive, and visually engaging web experiences using React.js, JavaScript, and modern frontend technologies.",
+      image: frontendImg,
+      position: "center",
+      backgroundSize: "cover",
     },
     {
-      category: "Supply chain solutions",
-      title: <>Scope 3 sourcing<br />verification</>,
+      category: "SAP S/4HANA – PP",
+      title: (
+        <>
+          Understanding Business
+          <br />
+          Processes
+        </>
+      ),
       description:
-        "Trace commodities to the plots that grew them, with deforestation-free evidence attached to every shipment.",
-      image:
-        "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025545_b003e5cc-e68f-4fee-b686-c217a5d81eea.png&w=1400&q=82",
-      position: "50% 50%",
-      backgroundSize: "190%",
+        "Exploring end-to-end production planning, from master data and BOM to MRP, routing, production execution, and TECO.",
+      image: sapImg,
+      position: "center",
+      backgroundSize: "cover",
     },
     {
-      category: "Biodiversity credits",
-      title: <>Living species<br />baselines</>,
+      category: "Problem Solving & Innovation",
+      title: (
+        <>
+          Turning Ideas Into
+          <br />
+          Solutions
+        </>
+      ),
       description:
-        "Acoustic and eDNA monitoring builds a measurable biodiversity baseline you can report against year over year.",
-      image:
-        "https://images.higgs.ai/?default=1&output=webp&url=https%3A%2F%2Fd8j0ntlcm91z4.cloudfront.net%2Fuser_38xzZboKViGWJOttwIXH07lWA1P%2Fhf_20261106_025630_9a37a1e0-2547-4973-8160-c75205993914.png&w=1400&q=82",
-      position: "62% 30%",
-      backgroundSize: "230%",
+        "Combining analytical thinking, creativity, and technical knowledge to solve real-world challenges and build practical solutions.",
+      image: innovationImg,
+      position: "center",
+      backgroundSize: "cover",
     },
   ];
 
-//   const stats = [
-//     { count: "1,240", label: "Sensors deployed" },
-//     { count: "38", label: "Countries monitored" },
-//     { count: "2.1", label: "Mt CO₂e verified" },
-//     { count: "99.4%", label: "% Data uptime" },
-//   ];
-
   return (
-    <section className="nigam-sol-section" id="solutions">
+    <section className="nigam-sol-section container" id="solutions">
 
+      {/* Section Heading */}
       <div className="nigam-sol-head">
         <div>
-          <span className="nigam-sol-chip">Our solutions</span>
+          <span className="nigam-sol-chip">What I Do</span>
 
           <h2>
-            Validating what the ecosystem does naturally
+            Combining technology, creativity & business understanding
           </h2>
         </div>
 
-        <p>
-          Field sensors, atmospheric flux towers and satellite data fused into
-          one auditable record — so every tonne you report can be traced back
-          to the ground it came from.
+        <p  color={isDarkMode ? '#ffffff' : '#000000'}>
+          From building modern, responsive web applications to understanding
+          SAP S/4HANA production planning, I enjoy turning ideas into practical
+          solutions through technology, continuous learning, and
+          problem-solving.
         </p>
       </div>
 
+      {/* About Cards */}
       <div className="nigam-sol-cards">
-
         {solutions.map((solution, index) => (
           <article
             className="nigam-sol-card"
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
           >
-
             <div
               className="nigam-sol-card-bg"
               style={{
@@ -137,22 +152,9 @@ const Solutions = () => {
               <h3>{solution.title}</h3>
               <p>{solution.description}</p>
             </div>
-
           </article>
         ))}
-
       </div>
-
-      {/* <div className="nigam-sol-stats">
-
-        {stats.map((stat, index) => (
-          <div className="nigam-sol-stat" key={index}>
-            <strong>{stat.count}</strong>
-            <span>{stat.label}</span>
-          </div>
-        ))}
-
-      </div> */}
 
     </section>
   );

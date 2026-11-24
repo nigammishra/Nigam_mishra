@@ -134,7 +134,7 @@ body.dark-mode .about__subtitle {
   position: relative;
   z-index: 5;
   /* margin-top: -30vh; */
-  background: #fff;
+  /* background: #fff; */
   border-radius: 22px 22px 0 0;
   padding: 70px 34px 90px;
   /* box-shadow: 0 -30px 60px rgba(16, 41, 26, 0.12); */
@@ -162,7 +162,7 @@ body.dark-mode .about__subtitle {
 .nigam-sol-head p {
   font-size: 15px;
   line-height: 1.5;
-  color: #4a5a4f;
+  /* color: #4a5a4f; */
   max-width: 360px;
 }
 
@@ -388,4 +388,21 @@ body.dark-mode .about__subtitle {
     font-size: 30px;
   }
 
+}
+
+.nigam-sol-chip {
+  display: inline-block;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  background: rgba(198, 232, 107, 0.12);
+  border: 1px solid rgba(198, 232, 107, 0.3);
+  /* color: #1b3122; */
+
+  backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
 }
