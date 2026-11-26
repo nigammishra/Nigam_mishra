@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from "react";
 import { Helmet } from "react-helmet"; // Import Helmet for SEO
 import { ThemeContext } from "../../ThemeContext"; // Adjust path if necessary
 import "./skill.css";
+// import {  } from "react-icons/si";
 import {
   DiJavascript1,
   DiReact,
@@ -28,6 +29,7 @@ import {
   SiSpringboot,
   SiIntellijidea,
   SiEclipseche,
+  SiSap,
 } from "react-icons/si";
 import { RotatingTriangles } from "react-loader-spinner";
 
@@ -162,6 +164,10 @@ const Skills = () => {
               <DiGit size={50} color="#F1502F" />
               <span className="tooltip-text">Git</span>
             </div>
+            <div className="icon-container">
+              <SiSap size={50} color={isDarkMode ? "#FFFFFF" : "#008FD3"} />
+              <span className="tooltip-text">SAP S/4HANA PP</span>
+            </div>
           </div>
 
           <span className="section__subtitle" style={{ marginTop: "40px" }}>
@@ -206,12 +212,19 @@ const Skills = () => {
               <span className="tooltip-text">Notepad++</span>
             </div>
             <div className="icon-container">
-              <SiEclipseche size={50} color="#2C2255" /> 
+              <SiEclipseche size={50} color="#2C2255" />
               <span className="tooltip-text">Eclipse</span>
             </div>
             <div className="icon-container">
-              <SiIntellijidea size={50} color={isDarkMode ? "#FFFFFF" : "#000000"} /> 
+              <SiIntellijidea
+                size={50}
+                color={isDarkMode ? "#FFFFFF" : "#000000"}
+              />
               <span className="tooltip-text">IntelliJ IDEA</span>
+            </div>
+            <div className="icon-container">
+              <SiSap size={50} color={isDarkMode ? "#FFFFFF" : "#008FD3"} />
+              <span className="tooltip-text">SAP S/4HANA PP</span>
             </div>
           </div>
         </section>
