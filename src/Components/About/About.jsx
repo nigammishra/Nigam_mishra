@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Helmet } from 'react-helmet'; // Import Helmet for SEO
 import "./about.css";
 import AboutImg from "../../assets/nigamimage1.png";
-import CV from "../../assets/nigamresumeAll-in-one1.pdf";
+import CV from "../../assets/nigammishra.pdf";
 import Info from "./Info";
 import Solutions from "./Solutions";
 import { RotatingTriangles } from "react-loader-spinner";
