@@ -186,3 +186,28 @@
     color: #000; /* Button color in dark mode */
   }
   
+
+.services__modal-content {
+  max-height: 80vh;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: var(--title-color) transparent;
+}
+
+/* Chrome, Edge and Safari */
+.services__modal-content::-webkit-scrollbar {
+  width: 5px;
+}
+
+.services__modal-content::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.services__modal-content::-webkit-scrollbar-thumb {
+  background: var(--title-color);
+  border-radius: 10px;
+}
+
+.services__modal-content::-webkit-scrollbar-thumb:hover {
+  background: var(--text-color);
+}

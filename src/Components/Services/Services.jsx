@@ -205,6 +205,80 @@ const Services = () => {
             </div>
           </div>
         </div>
+
+<div className="services__content">
+  <div>
+    <i className="uil uil-industry services__icon"></i>
+    <h3 className="services__title">
+      SAP S/4HANA <br /> Production Planning
+    </h3>
+  </div>
+  <span className="services__button" onClick={() => toggleTab(4)}>
+    View More{" "}
+    <i className="uil uil-arrow-right services__button-icon"></i>
+  </span>
+  <div
+    className={
+      toggleState === 4
+        ? "services__modal active_modal"
+        : "services__modal"
+    }
+  >
+    <div className="services__modal-content">
+      <i
+        onClick={() => toggleTab(0)}
+        className="uil uil-times services__modal-close"
+      ></i>
+      <h3 className="services__modal-title">
+        SAP S/4HANA Production Planning (PP)
+      </h3>
+      <p className="services__modal-description">
+        Knowledge and hands-on system practice in SAP S/4HANA
+        Production Planning, covering manufacturing processes,
+        master data management, and production planning fundamentals.
+      </p>
+      <ul className="services__modal-services grid">
+        <li className="services__modal-service">
+          <i className="uil uil-check-circle services__modal-icon"></i>
+          <p className="services__modal-info">
+            Material Master configuration and understanding of MRP 1–4 views.
+          </p>
+        </li>
+        <li className="services__modal-service">
+          <i className="uil uil-check-circle services__modal-icon"></i>
+          <p className="services__modal-info">
+            Bill of Materials (BOM), Alternative BOM and Super BOM.
+          </p>
+        </li>
+        <li className="services__modal-service">
+          <i className="uil uil-check-circle services__modal-icon"></i>
+          <p className="services__modal-info">
+            Work Center creation and capacity planning fundamentals.
+          </p>
+        </li>
+        <li className="services__modal-service">
+          <i className="uil uil-check-circle services__modal-icon"></i>
+          <p className="services__modal-info">
+            Routing, Production Version and manufacturing process understanding.
+          </p>
+        </li>
+        <li className="services__modal-service">
+          <i className="uil uil-check-circle services__modal-icon"></i>
+          <p className="services__modal-info">
+            Material Requirements Planning (MRP) and procurement planning.
+          </p>
+        </li>
+        <li className="services__modal-service">
+          <i className="uil uil-check-circle services__modal-icon"></i>
+          <p className="services__modal-info">
+            Production Order lifecycle, from creation to TECO (Technically Completed).
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
       </div>
     </section>
      )}
